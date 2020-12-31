@@ -1,0 +1,10 @@
+i was trying to annotate a text for name entity recognition model using Spacy. and i had tried with Tagtog tool to annotate my text but the output in Json format look like below
+_----------------------------------------------------------------------
+{"annotatable":{"parts":["s1v1"]},"anncomplete":false,"sources":[],"metas":{},"entities":[{"classId":"e_1","part":"s1v1","offsets":[{"start":7,"text":"London"}],"coordinates":[],"confidence":{"state":"pre-added","who":["user:Antie"],"prob":1},"fields":{},"normalizations":{}},{"classId":"e_1","part":"s1v1","offsets":[{"start":18,"text":"Berlin"}],"coordinates":[],"confidence":{"state":"pre-added","who":["user:Antie"],"prob":1},"fields":{},"normalizations":{}}],"relations":[]}
+----------------------‐----------------------------------------------------------------------
+but this output couldn't be acceptable during training the model
+i need the output looks like below format
+("I like London and Berlin.",{entities [(7,13,"Loc"),(18,24 "Loc")]})
+which annotation tool would you recommend me to get a such formatted output ?
+Am Waiting Your Reply Eagerly.
+Thank you God Bless You !!
